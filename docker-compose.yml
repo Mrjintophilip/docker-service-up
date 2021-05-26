@@ -1,0 +1,11 @@
+version: "3"
+services: 
+  hello :
+    working_dir: /app
+    build: .
+    command: node hello-world.js
+    ports: 
+      - 8080:8080
+    deploy:
+      replicas: 5
+
